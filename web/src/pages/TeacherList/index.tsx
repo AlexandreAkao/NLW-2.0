@@ -5,7 +5,6 @@ import TeacherItem from '../../components/TeacherItem';
 import Input from '../../components/Input';
 import Select from '../../components/Select';
 
-
 import './styles.css';
 
 function TeacherList() {
