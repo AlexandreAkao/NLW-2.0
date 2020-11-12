@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text, Image, TouchableOpacity } from 'react-native'
+import { useNavigation } from '@react-navigation/native';
 
 import styles from './styles';
 
@@ -9,6 +10,12 @@ import giveClassesIcon from '../../assets/images/icons/give-classes.png';
 import heartIcon from '../../assets/images/icons/heart.png';
 
 export default function Landing() {
+  const { navigate } = useNavigation();
+
+  function handleNavigateToGiveClassesPage() {
+    navigate('GiveClasses');
+  }
+
   return (
     <View style={styles.container}>
       <Image source={landingImg} style={styles.banner} />
@@ -25,7 +32,10 @@ export default function Landing() {
           <Text style={styles.buttonText}>Estudar</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={[styles.button, styles.buttonSecondary]}>
+        <TouchableOpacity 
+          onPress={handleNavigateToGiveClassesPage} 
+          style={[styles.button, styles.buttonSecondary]}
+        >
           <Image source={giveClassesIcon} />
 
           <Text style={styles.buttonText}>Dar aulas</Text>
