@@ -5,7 +5,7 @@ import styles from './styles';
 
 export default function Favorites() {
   return (
-    <View>
+    <View style={styles.container}>
       <Text></Text>
     </View>
   )
