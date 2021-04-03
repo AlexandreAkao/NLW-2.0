@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between'
   },
   inputBlock: {
-    width: '48%'
+    width: '48%',
   },
   input: {
     height: 54,
@@ -36,6 +36,16 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontFamily: 'Archivo_700Bold',
     fontSize: 16,
+  },
+  pickerContainer: {
+    height: 54,
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    justifyContent: 'center',
+    paddingTop: 10,
+    paddingHorizontal: 16,
+    marginTop: 4,
+    marginBottom: 16
   }
 })
 
