@@ -1,15 +1,8 @@
 import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f0f0f7',
-  },
-  teacherList: {
-    marginTop: -40,
-  },
   searchForm: {
-    marginBottom: 8,
+    marginBottom: 24,
   },
   label: {
     color: '#d4c2ff',
@@ -30,6 +23,19 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     marginTop: 4,
     marginBottom: 16
+  },
+  submitButton: {
+    backgroundColor: '#04d361',
+    height:  56,
+    borderRadius: 8,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row'
+  },
+  submitButtonText: {
+    color: '#fff',
+    fontFamily: 'Archivo_700Bold',
+    fontSize: 16,
   }
 })
 
